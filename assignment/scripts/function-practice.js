@@ -67,16 +67,34 @@ console.log(`Should say 4 ${getLast([1,2,3,4])}`);
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-
-}
+  console.log('in find', value, array);
+  let status = false;
+  for(let x of array){
+    console.log(x) //check items in array0
+    if( x == value){
+      status = true;
+      break;
+    }//find matching value
+} //end for loop
+return status
+} //end find
+let array0= [1,2,3,4];
+console.log(find(4, array0));
+//also works if you don't make an array
+//variable and just directly input and array
+//in the function
 
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
-
+/*function isFirstLetter(letter, string) {
+if(='letter'){
+  return true
+}else {
+  return false
+}
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
@@ -97,3 +115,4 @@ function sumAll( ) {
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+*/
