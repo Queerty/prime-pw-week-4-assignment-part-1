@@ -80,8 +80,8 @@ return status
 } //end find
 let array0= [1,2,3,4];
 console.log(find(4, array0));
-//also works if you don't make an array
-//variable and just directly input and array
+//also works if you don't make an array variable
+//and just directly input and array
 //in the function
 
 // ----------------------
