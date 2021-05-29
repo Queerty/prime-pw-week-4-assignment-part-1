@@ -117,17 +117,22 @@ console.log(`The sum of ${array}: ${sumAll(array)}`);
 
 function positiveNums(array){
   let newArray = [];
+  let positive;
+  let negative;
   console.log('in positiveNums with array:', array);
   for(let num of array){
+
     if(num > 0){ //I think I need to convert this from string to number
-      newArray= newArray.push(num);
-    }//if positive return new array
+
+      newArray.push(num);
+    }//if positive add num to my newArray
     else{
+
     }
-    return newArray
-  }//end for loop
-}//end positiveNum function
-console.log(positiveNums([-1, 0, 1, 2, 3]));
+  };//end for loop
+  return newArray
+};//end positiveNum function
+console.log(positiveNums([-1, 0, 1, 2, 3, 4]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
